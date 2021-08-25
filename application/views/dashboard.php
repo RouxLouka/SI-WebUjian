@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<!---<html dir="ltr" lang="en">-->
 
 <head>
     <meta charset="utf-8">
@@ -56,7 +56,7 @@
                     <!-- Logo -->
                     <!-- ============================================================== -->
                     <div class="navbar-brand">
-                        <a href="index.html" class="logo">
+                        <a href="<?php echo base_url('dashboard'); ?>" class="logo">
                             <!-- Logo icon -->
                             <b class="logo-icon">
                                 <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
@@ -94,22 +94,7 @@
                         <!-- ============================================================== -->
                         <!-- Search -->
                         <!-- ============================================================== -->
-                        <li class="nav-item search-box">
-                            <a class="nav-link waves-effect waves-dark" href="javascript:void(0)">
-                                <div class="d-flex align-items-center">
-                                    <i class="mdi mdi-magnify font-20 me-1"></i>
-                                    <div class="ms-1 d-none d-sm-block">
-                                        <span>Search</span>
-                                    </div>
-                                </div>
-                            </a>
-                            <form class="app-search position-absolute">
-                                <input type="text" class="form-control" placeholder="Search &amp; enter">
-                                <a class="srh-btn">
-                                    <i class="ti-close"></i>
-                                </a>
-                            </form>
-                        </li>
+                        
                     </ul>
                     <!-- ============================================================== -->
                     <!-- Right side toggle and nav items -->
@@ -120,7 +105,7 @@
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31">
+                                <img src="assets/images/users/Roux.png" alt="user" class="rounded-circle" width="31">
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end user-dd animated" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user me-1 ms-1"></i>
@@ -129,6 +114,8 @@
                                     My Balance</a>
                                 <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email me-1 ms-1"></i>
                                     Inbox</a>
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>adm/logout" onclick="return confirm('keluar..?');"><i class="ti-key me-1 ms-1"></i>
+                                    Logout</a>
                             </ul>
                         </li>
                         <!-- ============================================================== -->
@@ -151,7 +138,7 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('dashboard'); ?>"
                                 aria-expanded="false">
                                 <i class="mdi mdi-av-timer"></i>
                                 <span class="hide-menu">Dashboard</span>
@@ -218,14 +205,14 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-5 align-self-center">
-                        <h4 class="page-title">Dashboard</h4>
+                        <h4 class="page-title">Web Ujian Universitas Bung Hatta</h4>
                     </div>
                     <div class="col-7 align-self-center">
                         <div class="d-flex align-items-center justify-content-end">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item">
-                                        <a href="#">Home</a>
+                                        <a href="<?php echo base_url('dashboard'); ?>">Home</a>
                                     </li>
                                     <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                                 </ol>
@@ -234,6 +221,25 @@
                     </div>
                 </div>
             </div>
+
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                Selamat Datang di Web Ujian Universitas Bung Hatta </br>
+                                <button type="button" class="btn btn-outline-info btn-lg">Data Mahasiswa</button>
+                                <button type="button" class="btn btn-outline-info btn-lg">Data Dosen</button>
+                                <button type="button" class="btn btn-outline-info btn-lg">Data Matakuliah</button>
+                                <button type="button" class="btn btn-outline-info btn-lg">Soal</button>
+                                <button type="button" class="btn btn-outline-info btn-lg">Hasil Ujian</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <!-- ============================================================== -->
             <!-- End Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
@@ -244,22 +250,89 @@
                 <!-- ============================================================== -->
                 <!-- Email campaign chart -->
                 <!-- ============================================================== -->
-                <div class="jumbotron">
-  <h1 class="display-4">Welcome</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
-</div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Testing</h4>
+                                <div class="sales ct-charts mt-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
                 <!-- ============================================================== -->
                 <!-- Email campaign chart -->
                 <!-- ============================================================== -->
                 <!-- ============================================================== -->
                 <!-- Ravenue - page-view-bounce rate -->
                 <!-- ============================================================== -->
-                
+                <div class="row">
+                    <!-- column -->
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Latest Sales</h4>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="border-top-0">NAME</th>
+                                            <th class="border-top-0">STATUS</th>
+                                            <th class="border-top-0">DATE</th>
+                                            <th class="border-top-0">PRICE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                            <td class="txt-oflo">Elite admin</td>
+                                            <td><span class="label label-success label-rounded">SALE</span> </td>
+                                            <td class="txt-oflo">April 18, 2021</td>
+                                            <td><span class="font-medium">$24</span></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="txt-oflo">Real Homes WP Theme</td>
+                                            <td><span class="label label-info label-rounded">EXTENDED</span></td>
+                                            <td class="txt-oflo">April 19, 2021</td>
+                                            <td><span class="font-medium">$1250</span></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="txt-oflo">Ample Admin</td>
+                                            <td><span class="label label-purple label-rounded">Tax</span></td>
+                                            <td class="txt-oflo">April 19, 2021</td>
+                                            <td><span class="font-medium">$1250</span></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="txt-oflo">Medical Pro WP Theme</td>
+                                            <td><span class="label label-success label-rounded">Sale</span></td>
+                                            <td class="txt-oflo">April 20, 2021</td>
+                                            <td><span class="font-medium">-$24</span></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="txt-oflo">Hosting press html</td>
+                                            <td><span class="label label-success label-rounded">SALE</span></td>
+                                            <td class="txt-oflo">April 21, 2021</td>
+                                            <td><span class="font-medium">$24</span></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="txt-oflo">Digital Agency PSD</td>
+                                            <td><span class="label label-danger label-rounded">Tax</span> </td>
+                                            <td class="txt-oflo">April 23, 2021</td>
+                                            <td><span class="font-medium">-$14</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- ============================================================== -->
                 <!-- Ravenue - page-view-bounce rate -->
                 <!-- ============================================================== -->
