@@ -47,4 +47,10 @@
             </div>
         </div>
 	</head>
+    <script src="<?php echo base_url(); ?>___/js/jquery-1.11.3.min.js"></script> 
+<script type="text/javascript">
+	base_url = "<?php echo base_url(); ?>";
+	uri_js = "<?php echo $this->config->item('uri_js'); ?>";
+</script>
+<script src="<?php echo base_url(); ?>___/js/aplikasi.js"></script> 
 </html>

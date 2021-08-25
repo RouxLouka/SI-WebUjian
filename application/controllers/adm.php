@@ -31,7 +31,7 @@ class Adm extends CI_Controller {
 		
 		$a['p']			= "v_main";
 		
-		$this->load->view('aaa', $a);
+		$this->load->view('dashboard', $a);
 	}
 	
 	/* == ADMIN == */
