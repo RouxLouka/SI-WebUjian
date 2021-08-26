@@ -11,7 +11,7 @@
     <meta name="description"
         content="Nice Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
     <meta name="robots" content="noindex,nofollow">
-    <title>Nice Admin Lite Template by WrapPixel</title>
+    <title>Web Ujian Kampus</title>
     <link rel="canonical" href="https://www.wrappixel.com/templates/niceadmin-lite/" />
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
@@ -114,7 +114,7 @@
                                     My Balance</a>
                                 <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email me-1 ms-1"></i>
                                     Inbox</a>
-                                <a class="dropdown-item" href="<?php echo base_url(); ?>adm/logout" onclick="return confirm('keluar..?');"><i class="ti-key me-1 ms-1"></i>
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>adm/logout" onclick="return confirm('Apakah Anda yakin ingin keluar dari web ini?');"><i class="ti-key me-1 ms-1"></i>
                                     Logout</a>
                             </ul>
                         </li>
@@ -145,35 +145,35 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="pages-profile.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('profile'); ?>"
                                 aria-expanded="false">
                                 <i class="mdi mdi-account-network"></i>
                                 <span class="hide-menu">Profile</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="form-basic.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('basic'); ?>"
                                 aria-expanded="false">
                                 <i class="mdi mdi-arrange-bring-forward"></i>
                                 <span class="hide-menu">Form Basic</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="table-basic.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('table'); ?>"
                                 aria-expanded="false">
                                 <i class="mdi mdi-border-none"></i>
                                 <span class="hide-menu">Table</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="icon-material.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('icon'); ?>"
                                 aria-expanded="false">
                                 <i class="mdi mdi-face"></i>
                                 <span class="hide-menu">Icon</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="starter-kit.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('blank'); ?>"
                                 aria-expanded="false">
                                 <i class="mdi mdi-file"></i>
                                 <span class="hide-menu">Blank</span>
@@ -205,7 +205,7 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-5 align-self-center">
-                        <h4 class="page-title">Web Ujian Universitas Bung Hatta</h4>
+                        <h4 class="page-title">Web Ujian</h4>
                     </div>
                     <div class="col-7 align-self-center">
                         <div class="d-flex align-items-center justify-content-end">
@@ -230,14 +230,16 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                Selamat Datang di Web Ujian Universitas Bung Hatta </br>
-                                <button type="button" class="btn btn-outline-info btn-lg">Data Mahasiswa</button>
-                                <button type="button" class="btn btn-outline-info btn-lg">Data Dosen</button>
-                                <button type="button" class="btn btn-outline-info btn-lg">Data Matakuliah</button>
-                                <button type="button" class="btn btn-outline-info btn-lg">Soal</button>
-                                <button type="button" class="btn btn-outline-info btn-lg">Hasil Ujian</button>
+                                Selamat Datang di Web Ujian</br>
+                                
                             </div>
+                            
                         </div>
+                            <button type="button" class="btn btn-primary btn-md">Data Mahasiswa</button>
+                            <button type="button" class="btn btn-primary btn-md">Data Dosen</button>
+                            <button type="button" class="btn btn-primary btn-md">Data Matakuliah</button>
+                            <button type="button" class="btn btn-primary btn-md">Soal</button>
+                            <button type="button" class="btn btn-primary btn-md">Hasil Ujian</button>
                     </div>
                 </div>
             <!-- ============================================================== -->
