@@ -205,14 +205,14 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-5 align-self-center">
-                        <h4 class="page-title">Basic Table</h4>
+                        <h4 class="page-title">Pendaftaran</h4>
                     </div>
                     <div class="col-7 align-self-center">
                         <div class="d-flex align-items-center justify-content-end">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item">
-                                        <a href="#">Home</a>
+                                        <a href="<?php echo base_url('dashboard'); ?>">Home</a>
                                     </li>
                                     <li class="breadcrumb-item active" aria-current="page">Basic Table</li>
                                 </ol>
@@ -234,22 +234,21 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="card card-body">
-                            <h4 class="card-title">Default Forms</h4>
-                            <h5 class="card-subtitle"> All bootstrap element classies </h5>
+                            <h4 class="card-title">Daftar Mahasiswa</h4>
+                            <h5 class="card-subtitle"></h5>
                             <form class="form-horizontal mt-4">
                                 <div class="form-group">
-                                    <label>Default Text <span class="help"> e.g. "George deo"</span></label>
-                                    <input type="text" class="form-control" value="George deo...">
+                                    <label>Nama<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="Masukkan Nama Anda">
                                 </div>
                                 <div class="form-group">
-                                    <label for="example-email">Email <span class="help"> e.g.
-                                            "example@gmail.com"</span></label>
+                                    <label for="example-email">Email<span class="help"></span></label>
                                     <input type="email" id="example-email" name="example-email" class="form-control"
                                         placeholder="Email">
                                 </div>
                                 <div class="form-group">
                                     <label>Password</label>
-                                    <input type="password" class="form-control" value="password">
+                                    <input type="password" class="form-control" placeholder="Masukkan Password">
                                 </div>
                                 <div class="form-group">
                                     <label>Placeholder</label>
