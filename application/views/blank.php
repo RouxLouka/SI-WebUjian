@@ -212,7 +212,7 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item">
-                                        <a href="#">Home</a>
+                                        <a href="<?php echo base_url('dashboard'); ?>">Home</a>
                                     </li>
                                     <li class="breadcrumb-item active" aria-current="page">Starter Page</li>
                                 </ol>

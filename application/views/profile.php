@@ -212,7 +212,7 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item">
-                                        <a href="#">Home</a>
+                                        <a href="<?php echo base_url('dashboard'); ?>">Home</a>
                                     </li>
                                     <li class="breadcrumb-item active" aria-current="page">Profile</li>
                                 </ol>
@@ -295,18 +295,6 @@
                                         </div>
                                     </div>
                                    
-                                    <div class="form-group">
-                                        <label class="col-sm-12">Select Country</label>
-                                        <div class="col-sm-12">
-                                            <select class="form-select shadow-none form-control-line">
-                                                <option>London</option>
-                                                <option>India</option>
-                                                <option>Usa</option>
-                                                <option>Canada</option>
-                                                <option>Thailand</option>
-                                            </select>
-                                        </div>
-                                    </div>
                                     <div class="form-group">
                                         <div class="col-sm-12">
                                             <button class="btn btn-success text-white">Update Profile</button>
