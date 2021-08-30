@@ -165,6 +165,7 @@
                                 <span class="hide-menu">Table</span>
                             </a>
                         </li>
+
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('dosen'); ?>"
                                 aria-expanded="false">
@@ -172,6 +173,7 @@
                                 <span class="hide-menu">Dosen</span>
                             </a>
                         </li>
+
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('icon'); ?>"
                                 aria-expanded="false">
@@ -212,7 +214,7 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-5 align-self-center">
-                        <h4 class="page-title">Profile</h4>
+                        <h4 class="page-title">Basic Table</h4>
                     </div>
                     <div class="col-7 align-self-center">
                         <div class="d-flex align-items-center justify-content-end">
@@ -221,7 +223,7 @@
                                     <li class="breadcrumb-item">
                                         <a href="<?php echo base_url('dashboard'); ?>">Home</a>
                                     </li>
-                                    <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Basic Table</li>
                                 </ol>
                             </nav>
                         </div>
@@ -238,82 +240,89 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                <!-- Row -->
-                <div class="row">
-                    <!-- Column -->
-                    <div class="col-lg-4 col-xlg-3">
+                <!--<div class="row col-md-12 ini_bodi">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Data Siswa
+                            <div class="tombol-kanan">
+                                <a class="btn btn-success btn-sm tombol-kanan" href="#" onclick="return m_siswa_e(0);"><i class="glyphicon glyphicon-plus"></i> &nbsp;&nbsp;Tambah</a>        
+                                <a class="btn btn-warning btn-sm tombol-kanan" href="<?php echo base_url(); ?>upload/format_import_siswa.xlsx" ><i class="glyphicon glyphicon-download"></i> &nbsp;&nbsp;Download Format Import</a>
+                                <a class="btn btn-info btn-sm tombol-kanan" href="<?php echo base_url(); ?>adm/m_siswa/import" ><i class="glyphicon glyphicon-upload"></i> &nbsp;&nbsp;Import</a>
+                            </div>
+                        </div>-->
+                        <!--Coba bikin Table baru-->
+                        <div class="row">
+                    <!-- column -->
+                    <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <center class="mt-4"> <img src="<?php echo base_url(); ?>assets/images/users/5.jpg"
-                                        class="rounded-circle" width="150" />
-                                    <h4 class="card-title mt-2">Hanna Gover</h4>
-                                    <h6 class="card-subtitle">Accoubts Manager Amix corp</h6>
-                                    <div class="row text-center justify-content-md-center">
-                                        <div class="col-4"><a href="javascript:void(0)" class="link"><i
-                                                    class="mdi mdi-account-network"></i>
-                                                <font class="font-medium">254</font>
-                                            </a></div>
-                                        <div class="col-4"><a href="javascript:void(0)" class="link"><i
-                                                    class="mdi mdi-camera"></i>
-                                                <font class="font-medium">54</font>
-                                            </a></div>
-                                    </div>
-                                </center>
+                                <h4 class="card-title">Tabel Dosen</h4>
                             </div>
-                            <div>
-                                <hr>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!-- Column -->
-                    <!-- Column -->
-                    <div class="col-lg-8 col-xlg-9">
-                        <div class="card">
-                            <div class="card-body">
-                                <form class="form-horizontal form-material mx-2">
-                                    <div class="form-group">
-                                        <label class="col-md-12">Full Name</label>
-                                        <div class="col-md-12">
-                                            <input type="text" placeholder=""
-                                                class="form-control form-control-line">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="example-email" class="col-md-12">Email</label>
-                                        <div class="col-md-12">
-                                            <input type="email" placeholder=""
-                                                class="form-control form-control-line" name="example-email"
-                                                id="example-email">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-12">Password</label>
-                                        <div class="col-md-12">
-                                            <input type="password" value="password"
-                                                class="form-control form-control-line">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-12">Phone No</label>
-                                        <div class="col-md-12">
-                                            <input type="text" placeholder=""
-                                                class="form-control form-control-line">
-                                        </div>
-                                    </div>
-                                   
-                                    <div class="form-group">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-success text-white">Update Profile</button>
-                                        </div>
-                                    </div>
-                                </form>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="border-top-0">NO</th>
+                                            <th class="border-top-0">NAME</th>
+                                            <th class="border-top-0">NIP</th>
+                                            <th class="border-top-0">AKSI</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                    <!-- Column -->
                 </div>
-                <!-- Row -->
+                    <!--<div class="panel-body">
+                        <a href="#" onclick="return aktifkan_semua_siswa();" class="btn btn-info" style="margin-bottom: 10px"><i class="fa fa-users"></i> Aktifkan semua siswa</a>
+                            <table class="table table-bordered" id="datatabel">
+                        <thead>
+                            <tr>
+                                <th width="5%">No</th>
+                                <th width="25%">Nama</th>
+                                <th width="15%">NIM / Username</th>
+                                <th width="20%">Kelas / Jurusan</th>
+                                <th width="35%">Aksi</th>
+                            </tr>
+                        </thead>
+
+                        <tbody></tbody>
+                    </table>
+    
+                </div>
+            </div>
+        </div>
+    </div>-->
+                    
+    <div class="modal fade" id="m_siswa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 id="myModalLabel">Data Siswa</h4>
+                    </div>
+                <div class="modal-body">
+                    <form name="f_siswa" id="f_siswa" onsubmit="return m_siswa_s();">
+                        <input type="hidden" name="id" id="id" value="0">
+                        
+                            
+                    <!--Table aslinya disini boys xD-->
+                    <table class="table table-form">
+                        <tr><td style="width: 25%">Nama</td><td style="width: 75%"><input type="text" class="form-control" name="nama" id="nama" required></td></tr>
+                        <tr><td style="width: 25%">NIM</td><td style="width: 75%"><input type="text" class="form-control" name="nim" id="nim" required></td></tr>
+                        <tr><td style="width: 25%">Jurusan</td><td style="width: 75%"><input type="text" class="form-control" name="jurusan" id="jurusan" required></td></tr>
+                    </table>
+                </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary"><i class="fa fa-check"></i> Simpan</button>
+                <button class="btn" data-dismiss="modal" aria-hidden="true"><i class="fa fa-minus-circle"></i> Tutup</button>
+            </div>
+            </form>
+        </div>
+     </div>
+    </div>
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
                 <!-- ============================================================== -->

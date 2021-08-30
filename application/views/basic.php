@@ -165,6 +165,15 @@
                                 <span class="hide-menu">Table</span>
                             </a>
                         </li>
+
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('dosen'); ?>"
+                                aria-expanded="false">
+                                <i class="mdi mdi-border-none"></i>
+                                <span class="hide-menu">Dosen</span>
+                            </a>
+                        </li>
+                        
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('icon'); ?>"
                                 aria-expanded="false">
@@ -250,11 +259,8 @@
                                     <label>Password</label>
                                     <input type="password" class="form-control" placeholder="Masukkan Password">
                                 </div>
-                                <div class="form-group">
-                                    <label>Placeholder</label>
-                                    <input type="text" class="form-control" placeholder="placeholder">
-                                </div>
-                                <div class="form-group">
+                                
+                               <!--<div class="form-group">
                                     <label>Text area</label>
                                     <textarea class="form-control" rows="5"></textarea>
                                 </div>
@@ -268,7 +274,7 @@
                                         <input type="text" id="disabledTextInput" class="form-control"
                                             placeholder="Disabled input">
                                     </fieldset>
-                                </div>
+                                </div>-->
                                 <div class="form-group row pt-3">
                                     <div class="col-sm-4">
                                         <div class="form-check">
