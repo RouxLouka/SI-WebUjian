@@ -114,7 +114,7 @@
                                     My Balance</a>
                                 <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email me-1 ms-1"></i>
                                     Inbox</a>
-                                <a class="dropdown-item" href="<?php echo base_url(); ?>adm/logout" onclick="return confirm('Apakah Anda yakin ingin keluar dari web ini?');"><i class="ti-key me-1 ms-1"></i>
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>adm/logout" onclick="return confirm('Apakah Anda yakin ingin keluar dari web ini?');"><i class="mdi mdi-logout me-1 ms-1"></i>
                                     Logout</a>
                             </ul>
                         </li>
